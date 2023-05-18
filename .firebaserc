@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "online-library-427ce": {
+      "hosting": {
+        "online-library": [
+          "online-library-427ce"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "online-library-427ce"
+  }
+}

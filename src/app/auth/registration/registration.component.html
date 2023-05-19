@@ -8,14 +8,18 @@
             <mat-form-field appearance="outline">
                 <mat-label>Email</mat-label>
                 <input type="email" matInput placeholder="email" formControlName="email">
+                <mat-error *ngIf="registerForm.controls['email'].invalid && (registerForm.controls['email'].dirty || registerForm.controls['email'].touched)">Email cím nem megfelelő</mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Jelszó</mat-label>
                 <input type="password" matInput placeholder="Jelszó" formControlName="password">
+                <mat-error *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched)">Jelszó minimum 6 karakter</mat-error>
+                <mat-error *ngIf></mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Jelszó újra</mat-label>
                 <input type="password" matInput placeholder="Jelszó újra" formControlName="passwordAgain">
+                <mat-error *ngIf="registerForm.controls['passwordAgain'].invalid && (registerForm.controls['passwordAgain'].dirty || registerForm.controls['passwordAgain'].touched)">Jelszó nem egyezik</mat-error>
 
             </mat-form-field>
         </div>

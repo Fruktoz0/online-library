@@ -30,7 +30,7 @@ export class RegistrationComponent {
 
   send(form: FormGroup) {
     this.registerForm.markAllAsTouched();
-    this.authService.registerUser({ ...form.value, role: 'user' })
+    this.authService.registerUser({ ...form.value, role: 'user', })
     form.reset();
 
     this.snackBar.open('Regitráció sikeres!', 'Bezárás', {

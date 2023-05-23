@@ -1,8 +1,11 @@
 export class User{
-    id?: string;
+    id?: number;
+    userName?: string;
     email?: string;
     password?: string;
     passwordAgain?: string;
-
-
+    country?: string;
+    birthDate?: number;
+    address?: string;
+    idcard?: string;
 }

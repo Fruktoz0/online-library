@@ -28,7 +28,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ListUsersComponent } from './users/list-users/list-users.component';
 import { UserComponent } from './users/user/user.component';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatTableDataSource, } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -46,7 +49,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     UserComponent,
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
@@ -54,6 +57,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatInputModule,
     MatButtonModule,
     MatSnackBarModule,
+    MatTableModule,
+    MatFormFieldModule,
 
 
     AngularFireDatabaseModule,

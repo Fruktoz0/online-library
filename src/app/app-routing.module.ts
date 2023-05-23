@@ -4,6 +4,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { ListBooksComponent } from './books/list-books/list-books.component';
 import { RegistrationComponent } from './auth/registration/registration.component';
 import { HomeComponent } from './core/home/home.component';
+import { ListUsersComponent } from './users/list-users/list-users.component';
+import { UserComponent } from './users/user/user.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'users',
+    component: ListUsersComponent
+  },
+  {
+    path: 'user/:id',
+    component: UserComponent
   },
   {
     path: '**',
